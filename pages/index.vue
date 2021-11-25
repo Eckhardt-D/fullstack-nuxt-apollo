@@ -1,7 +1,19 @@
 <template>
-  <Tutorial/>
+  <h1>{{ hello }}</h1>
 </template>
 
 <script>
-export default {}
+import { gql } from 'graphql-tag'
+
+export default {
+  apollo: {
+    hello: {
+      query: gql`
+        {
+          hello
+        }
+      `,
+    },
+  },
+}
 </script>
