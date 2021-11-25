@@ -1,9 +1,3 @@
-const { gql } = require('apollo-server-express')
+const todoSchema = require('./todo/todo.schema')
 
-const typeDefs = gql`
-  type Query {
-    hello: String
-  }
-`
-
-module.exports = typeDefs
+module.exports = [todoSchema]

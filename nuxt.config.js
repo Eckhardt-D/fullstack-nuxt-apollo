@@ -39,7 +39,9 @@ export default {
   apollo: {
     clientConfigs: {
       default: '@/graphql',
+      // setup a global error handler (see below for example)
     },
+    errorHandler: '~/plugins/apollo-error-handler.js',
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios

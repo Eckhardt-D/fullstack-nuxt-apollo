@@ -1,9 +1,3 @@
-const resolvers = {
-  Query: {
-    hello() {
-      return 'Hello There!'
-    },
-  },
-}
+const todoResolver = require('./todo/todo.resolver')
 
-module.exports = resolvers
+module.exports = [todoResolver]
